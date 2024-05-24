@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Main Color Scheme -->
+    <color name="purple">#5B00C9</color>
+    <color name="red_purple">#DA1F86</color>
+    <color name="magenta">#6CF5D3</color>
+    <color name="blue_magenta">#44D8FA</color>
+    <color name="light_yellow">#FCF549</color>
+    <color name="light_pink">#F97DE0</color>
+    <color name="darker_blue">#151931</color>
+
 </resources>
