@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Hypothermia Detection using Fuzzy</string>
+    <string name="disclaimer_dialog">The system will use a fuzzy logic approach and the parameters to be used are body temperature, heart rate, and blood oxygen saturation.</string>
 </resources>
