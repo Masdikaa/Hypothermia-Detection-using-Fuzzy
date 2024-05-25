@@ -41,12 +41,11 @@
         app:layout_constraintTop_toBottomOf="@id/title_app" />
 
     <!-- Input Layout-->
-
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@id/end_border"
         app:layout_constraintStart_toStartOf="@id/start_border"
         app:layout_constraintTop_toBottomOf="@id/disclaimer_tv">
@@ -63,36 +62,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/inputTemperatureTitle"
+            android:layout_marginTop="3dp"
             android:hint="Body Temperature"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/bodyTemperature"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/inputBloodSaturateTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textFieldHeartRate"
-            android:layout_marginTop="15dp"
-            android:text="Insert blood oxygen value:"
-            android:textSize="16sp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textFieldBloodSaturate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/inputBloodSaturateTitle"
-            android:hint="Heart rate"
-            app:endIconMode="clear_text">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/bloodSaturate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number" />
@@ -113,7 +88,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/inputHeartRateTitle"
-            android:hint="Heart rate"
+            android:layout_marginTop="3dp"
+            android:hint="Heart Rate"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -124,9 +100,36 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/inputBloodSaturateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textFieldHeartRate"
+            android:layout_marginTop="15dp"
+            android:text="Insert blood oxygen value:"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textFieldBloodSaturate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputBloodSaturateTitle"
+            android:layout_marginTop="3dp"
+            android:hint="Oxygen Saturation"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bloodSaturate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
     </RelativeLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginTop="12dp"
